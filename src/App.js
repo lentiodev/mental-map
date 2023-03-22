@@ -48,8 +48,11 @@ function App() {
         </p>
         <p>Demo Text</p>
         <p>Demo Text</p>
+        <p>Natly text</p>
+        <p>Natly text</p>
         <p>Demo Text</p>
         <p>Demo Text Second Branch</p>
+        main
         <a
           className="App-link"
           href="https://reactjs.org"
