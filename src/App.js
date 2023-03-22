@@ -36,6 +36,8 @@ function App() {
         <div className="social-icons">
           <a href="https://github.com"><i className="fab fa-github"></i></a>
           <a href="https://facebook.com"><i className="fab fa-facebook"></i></a>
+          <br> 
+          </br>
           <a href="https://instagram.com"><i className="fab fa-instagram"></i></a>
         </div>
       </footer>
