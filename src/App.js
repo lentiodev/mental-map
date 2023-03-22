@@ -48,6 +48,8 @@ function App() {
         </p>
         <p>Demo Text</p>
         <p>Demo Text</p>
+        <p>Natly text</p>
+        <p>Natly text</p>
         <a
           className="App-link"
           href="https://reactjs.org"
