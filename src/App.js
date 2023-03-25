@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./components/About";
 //import Footer from "./components/Footer";
 import Home from './components/Home';
-
+import QuoteGenerator from './components/QuoteGenerator';
 import Anxiety from './pages/Anxiety';
 import Depression from './pages/Depression';
 import Autism from './pages/Autism';
@@ -19,6 +19,7 @@ function App() {
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="QuoteGenerator" element={<QuoteGenerator/>} />
         <Route path="/anxiety" element={<Anxiety />} />
         <Route path="/depression" element={<Depression />} />
         <Route path="/autism" element={<Autism />} />
