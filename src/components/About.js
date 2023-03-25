@@ -4,9 +4,6 @@ import mapImage from '../images/map.png';
 import { GitHub, LinkedIn } from '@mui/icons-material';
 import { CardActions, IconButton } from '@mui/material';
 
-
-
-
 function About() {
     return (
       <div>
@@ -181,7 +178,4 @@ function About() {
     );
   }
   
-        
-  
-
 export default About;
