@@ -8,6 +8,8 @@ import ConditionsSection from './ConditionsSection';
 import { styled } from '@mui/material';
 import { Link } from 'react-router-dom';
 
+import Footer from './Footer';
+
 const StyledButton = styled(Link)`
   background-color: #5ce0d8;
   color: #fff;
@@ -23,6 +25,7 @@ const StyledButton = styled(Link)`
   left: 50%;
   transform: translate(-50%, -50%);
   text-decoration: none;
+  
 `;
 
 const Home = () => {
@@ -34,6 +37,7 @@ const Home = () => {
       <StyledButton to="/QuoteGenerator">
         <span style={{ fontSize: '1.5rem' }}>Get Quote</span>
       </StyledButton>
+      <Footer />
     </>
   );
 };
