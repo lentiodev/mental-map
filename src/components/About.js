@@ -3,7 +3,8 @@ import heroImage from '../images/hero.png';
 import mapImage from '../images/map.png';
 import { GitHub, LinkedIn } from '@mui/icons-material';
 import { CardActions, IconButton } from '@mui/material';
-import Iwona from '../images/iwona.png';
+import Iwona from '../images/iwona.jpeg';
+import Natalia from '../images/natalia.jpg';
 
 
 function About() {
@@ -122,11 +123,11 @@ function About() {
 
     <Grid item xs={12} sm={6} md={4}>
       <Card sx={{ maxWidth: 345, backgroundColor: '#f5f5f5', '&:hover': { backgroundColor: '#e0e0e0' } }}>
-        <CardMedia
-          sx={{ height: 140 }}
-          image="https://source.unsplash.com/random"
-          title="Card 1"
-        />
+      <CardMedia
+      sx={{ height: 220 }}
+      image={Natalia}
+      title="Card 1"
+    />
         <CardContent>
         <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
   Natalia Sergovantseva
@@ -140,7 +141,7 @@ function About() {
       <IconButton aria-label="GitHub" href="https://github.com/web3cryptoidea">
         <GitHub />
       </IconButton>
-      <IconButton aria-label="LinkedIn" href="https://linkedin.com">
+      <IconButton aria-label="LinkedIn" href="https://www.linkedin.com/in/natalia-sergovantseva/">
         <LinkedIn />
       </IconButton>
     </CardActions>
