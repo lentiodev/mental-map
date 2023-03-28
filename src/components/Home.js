@@ -1,12 +1,13 @@
- 
- 
-import React from 'react';
-import Navbar from './NavBar';
-import HeroSection from './HeroSection';
-import ConditionsSection from './ConditionsSection';
+import React from "react";
+import Navbar from "./NavBar";
+import HeroSection from "./HeroSection";
+import ConditionsSection from "./ConditionsSection";
+import ArticlesSection from "../ArticlesSection2";
+import MentalQuestions from "../MentalQuestions";
+import Footer from "./Footer";
 
-import { styled } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { styled } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const StyledButton = styled(Link)`
   background-color: #5ce0d8;
@@ -31,9 +32,12 @@ const Home = () => {
       <Navbar />
       <HeroSection />
       <ConditionsSection />
+      <ArticlesSection />
+      <MentalQuestions />
       <StyledButton to="/QuoteGenerator">
-        <span style={{ fontSize: '1.5rem' }}>Get Quote</span>
+        <span style={{ fontSize: "1.5rem" }}>Get Quote</span>
       </StyledButton>
+      <Footer />
     </>
   );
 };
