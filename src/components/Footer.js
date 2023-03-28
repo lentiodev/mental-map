@@ -72,6 +72,12 @@ return (
 		</Column>
 		</Row>
 	</Container>
+    <h5 style={{ color: "#5ce0d8",
+				textAlign: "center",
+				marginTop: "50px",
+                 }}>
+		© All rights reserved. 2023
+	</h5>
 	</Box>
 );
 };

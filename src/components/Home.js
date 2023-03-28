@@ -10,6 +10,10 @@ import { Link } from 'react-router-dom';
 
 import Footer from './Footer';
 
+import ArticlesGridTemplate from './ArticlesGridTemplate';
+
+
+
 const StyledButton = styled(Link)`
   background-color: #5ce0d8;
   color: #fff;
@@ -37,6 +41,7 @@ const Home = () => {
       <StyledButton to="/QuoteGenerator">
         <span style={{ fontSize: '1.5rem' }}>Get Quote</span>
       </StyledButton>
+      <ArticlesGridTemplate />
       <Footer />
     </>
   );
