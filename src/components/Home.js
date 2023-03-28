@@ -6,6 +6,8 @@ import ArticlesSection from "../ArticlesSection2";
 import MentalQuestions from "../MentalQuestions";
 import Footer from "./Footer";
 
+import ArticlesGridTemplate from "./ArticlesGridTemplate";
+
 import { styled } from "@mui/material";
 import { Link } from "react-router-dom";
 
@@ -37,6 +39,7 @@ const Home = () => {
       <StyledButton to="/QuoteGenerator">
         <span style={{ fontSize: "1.5rem" }}>Get Quote</span>
       </StyledButton>
+      <ArticlesGridTemplate />
       <Footer />
     </>
   );
