@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/NavBar';
 import { Typography } from '@mui/material';
 import { styled } from '@mui/material';
+import autismImage from '../images/autism.png'
 
 const Container = styled('div')`
   padding: 40px;
@@ -13,7 +14,9 @@ const Autism = () => {
       <Navbar />
       <Container>
       <Typography variant="h4" sx={{ textTransform: 'uppercase' }}>AUTISM</Typography>
+      <p>By Leonard Atkinson | Published on March 27, 2023</p>
         <Typography> <h2>Understanding Autism Spectrum Disorder: Symptoms, Causes, and Treatment Options</h2>
+        <img src={autismImage} alt="autism" style={{ maxWidth: '100%', width: '400px', float: 'left', marginRight: '20px' }} />
 
     <p>Autism, or Autism Spectrum Disorder (ASD), is a neurodevelopmental disorder that affects communication, social interaction, and behavior. The disorder is typically diagnosed in early childhood, and its prevalence has increased in recent years, with an estimated 1 in 54 children in the United States being diagnosed with ASD.</p>
 

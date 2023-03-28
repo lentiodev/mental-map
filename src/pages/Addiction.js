@@ -2,10 +2,12 @@ import React from 'react';
 import Navbar from '../components/NavBar';
 import { Typography } from '@mui/material';
 import { styled } from '@mui/material';
+import addictionImage from '../images/addiction.png'
 
 const Container = styled('div')`
   padding: 40px;
 `;
+
 
 const Addiction = () => {
   return (
@@ -16,6 +18,8 @@ const Addiction = () => {
         <Typography>
           <p>By John Doe, published on March 28, 2023</p>
           <h2>Understanding Addiction: Causes, Symptoms, and Treatment Options</h2>
+          <img src={addictionImage} alt="addiction" style={{ maxWidth: '100%', width: '400px', float: 'left', marginRight: '20px' }} />
+
           <p> Addiction is a chronic, relapsing brain disease that can have devastating effects on an individual's physical health, mental health, and relationships. Addiction can take many forms, including substance addiction (such as drugs or alcohol), behavioral addiction (such as gambling or gaming), or a combination of both.</p>
           
           <p> Addiction is characterized by compulsive drug use or behavior despite negative consequences. Individuals with addiction may experience intense cravings for the substance or behavior, withdrawal symptoms when attempting to quit, and a loss of control over their use or behavior.</p>

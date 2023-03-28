@@ -6,7 +6,6 @@ import { CardActions, IconButton } from '@mui/material';
 import Iwona from '../images/iwona.jpeg';
 import Natalia from '../images/natalia.jpg';
 
-
 function About() {
     return (
       
