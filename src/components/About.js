@@ -6,6 +6,7 @@ import { CardActions, IconButton } from '@mui/material';
 
 function About() {
     return (
+      
       <div>
         {<div>
       <AppBar position="static">
@@ -42,7 +43,7 @@ function About() {
 <Container maxWidth="md" sx={{ marginTop: '4rem' }}>
 <div style={{ textAlign: 'center' }}>
   <Typography variant="h1" sx={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '2rem' }}>
-    About Mental Map
+    Our Mission
   </Typography>
 </div>
   <Typography variant="body1" gutterBottom>
@@ -74,7 +75,7 @@ function About() {
           title="Card 1"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
             Lentio Sechou
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
@@ -99,32 +100,7 @@ function About() {
           title="Card 1"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Natalia Sergovantseva
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </Typography>
-        </CardContent>
-        <CardActions sx={{ justifyContent: 'center' }}>
-          <IconButton aria-label="GitHub" href="https://github.com">
-            <GitHub />
-          </IconButton>
-          <IconButton aria-label="LinkedIn" href="https://linkedin.com">
-            <LinkedIn />
-          </IconButton>
-        </CardActions>
-      </Card>
-    </Grid>
-    <Grid item xs={12} sm={6} md={4}>
-      <Card sx={{ maxWidth: 345, backgroundColor: '#f5f5f5', '&:hover': { backgroundColor: '#e0e0e0' } }}>
-        <CardMedia
-          sx={{ height: 140 }}
-          image="https://source.unsplash.com/random"
-          title="Card 1"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
             Iwona Malkinska
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
@@ -149,7 +125,33 @@ function About() {
           title="Card 1"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
+  Natalia Sergovantseva
+</Typography>
+
+          <Typography variant="body2" color="textSecondary" component="p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</Typography>
+</CardContent>
+    <CardActions sx={{ justifyContent: 'center' }}>
+      <IconButton aria-label="GitHub" href="https://github.com">
+        <GitHub />
+      </IconButton>
+      <IconButton aria-label="LinkedIn" href="https://linkedin.com">
+        <LinkedIn />
+      </IconButton>
+    </CardActions>
+  </Card>
+</Grid>
+    <Grid item xs={12} sm={6} md={4}>
+      <Card sx={{ maxWidth: 345, backgroundColor: '#f5f5f5', '&:hover': { backgroundColor: '#e0e0e0' } }}>
+        <CardMedia
+          sx={{ height: 140 }}
+          image="https://source.unsplash.com/random"
+          title="Card 1"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
           Vitaliy Zharkovskiy
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
@@ -166,6 +168,20 @@ function About() {
     </CardActions>
   </Card>
 </Grid>
+<Grid item xs={12} sm={6} md={4}>
+  <Card sx={{ maxWidth: 900, backgroundColor: '#f5f5f5', '&:hover': { backgroundColor: '#e0e0e0' } }}>
+    <CardContent>
+      <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
+        Get to know us.
+      </Typography>
+      <Typography variant="body2" color="textSecondary" component="p">
+        The team at Mental Map is a group of highly skilled professionals dedicated to delivering cutting-edge solutions in the field of mental health. The team comprises of experts in various fields including psychiatry, psychology, counseling, and software development. They work collaboratively to create innovative digital tools that aim to help people manage their mental health effectively. Each team member brings a unique set of skills and experiences to the table, and they all share a common passion for improving the lives of those struggling with mental health issues. With their expertise and dedication, the team at Mental Map is committed to making a positive impact in the mental health industry.
+      </Typography>
+    </CardContent>
+  </Card>
+</Grid>
+
+
         
 {/* <Grid item xs={12} sm={6} md={3}>
       <img src="https://cdn.pixabay.com/photo/2020/06/23/00/53/river-5330961_960_720.jpg" alt="additional photo" />
