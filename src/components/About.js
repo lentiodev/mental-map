@@ -3,7 +3,6 @@ import heroImage from '../images/hero.png';
 import mapImage from '../images/map.png';
 import { GitHub, LinkedIn } from '@mui/icons-material';
 import { CardActions, IconButton } from '@mui/material';
-import Navbar from './NavBar';
 import Iwona from '../images/iwona.jpeg';
 import Natalia from '../images/natalia.jpg';
 
@@ -11,7 +10,6 @@ function About() {
     return (
       
       <div>
-        <Navbar />
         {<div>
       <AppBar position="static">
         <Toolbar>
