@@ -23,7 +23,7 @@ export const Container = styled.div`
 export const Column = styled.div`
 display: flex;
 flex-direction: column;
-text-align: left;
+text-align: center;
 margin-left: 60px;
 `;
 

@@ -1,5 +1,5 @@
- import React, { useState } from 'react';
- import Navbar from './NavBar';
+import React, { useState } from 'react';
+import Navbar from './NavBar';
 import fetch from 'isomorphic-fetch';
 import { styled } from '@mui/material';
 
@@ -15,8 +15,11 @@ const StyledQuoteCard = styled('div')`
   max-width: 500px;
   margin: 0 auto;
   padding: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 50%;
+  top: 61%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -30,6 +33,14 @@ const StyledButton = styled('button')`
   font-size: 20px;
   padding: 8px 16px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 `;
 
 function QuoteGenerator() {

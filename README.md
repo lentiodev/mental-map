@@ -1,4 +1,51 @@
-# Getting Started with Create React App
+
+# Mental-Map Application
+This is Client-Side Single-Page Application Project built using React, Material-UI, and React Router v6. 
+Mental-Map Application aims to provide resources and support to individuals seeking help with mental health conditions, and also raises awareness about various mental health issues.
+
+## Features
+- Informative homepage with a hero section and navbar
+- Mental Health Conditions section with detailed information on Anxiety, Depression, Autism, and Addiction
+- Articles section with search functionality, pagination, and responsive design
+- Frequently Asked Questions (FAQ) section covering common mental health queries
+- Contact form with modern minimal design and local storage for user information
+- "Inspirational Quotes" generator page generating quotes of the day
+- Mobile responsive design for better user experience on various devices
+
+## Technology used
+- React app libraries: Emotions, React Icons
+- MUI components libraries: Material UI, Joy UI
+- Google fonts
+- React Router v6
+
+
+## Installation
+Clone the repository:
+
+git clone https://github.com/lentiodev/mental-map.git
+
+## Usage
+Link to deployed application (https://deploy-preview-19--delicate-clafoutis-8421e7.netlify.app/)
+
+Link to github repository (https://github.com/lentiodev/mental-map) 
+
+Screenshots of deployed application:
+
+[Link to screenshot1](./src/images/screenshot1.png)
+
+[Link to screenshot2](./src/images/screenshot2.png)
+
+[Link to screenshot3](./src/images/screenshot3.png)
+
+[Link to screenshot4](./src/images/screenshot4.png)
+
+## Credits
+Inspirational Quotes API [Link to GitHib repo](https://github.com/ssokurenko/quotes-react-app).
+
+## Lisence 
+Please refer to the LICENSE in the repo.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

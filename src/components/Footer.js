@@ -21,12 +21,12 @@ return (
 		<Row>
 		<Column>
 			<Heading>About Us</Heading>
-			<FooterLink href="#">Aim</FooterLink>
-			<FooterLink href="#">Vision</FooterLink>
-			<FooterLink href="#">Testimonials</FooterLink>
+			<FooterLink href="#">Mission</FooterLink>
+			<FooterLink href="#">Problem</FooterLink>
+			<FooterLink href="#">Solution</FooterLink>
 		</Column>
 		<Column>
-			<Heading>Solutions</Heading>
+			<Heading>Features</Heading>
 			<FooterLink href="#">Get Quote</FooterLink>
 			<FooterLink href="#">Testings</FooterLink>
 			<FooterLink href="#">Audio</FooterLink>
