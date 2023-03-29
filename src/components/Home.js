@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./NavBar";
 import HeroSection from "./HeroSection";
 import ConditionsSection from "./ConditionsSection";
-import ArticlesSection from "../ArticlesSection2";
+import ArticlesSection from "../ArticlesSection";
 import MentalQuestions from "../MentalQuestions";
 import Footer from "./Footer";
 

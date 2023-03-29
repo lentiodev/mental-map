@@ -1,5 +1,5 @@
- 
-import React, { useState } from 'react';
+ import React, { useState } from 'react';
+ import Navbar from './NavBar';
 import fetch from 'isomorphic-fetch';
 import { styled } from '@mui/material';
 
@@ -50,6 +50,8 @@ function QuoteGenerator() {
   };
 
   return (
+    <>
+    <Navbar />
     <StyledPage backgroundColor={backgroundColor}>
       <StyledQuoteCard>
         <h1>Get Your Quote of the Day!</h1>
@@ -57,6 +59,7 @@ function QuoteGenerator() {
         <StyledButton onClick={getQuote}>Generate Quote</StyledButton>
       </StyledQuoteCard>
     </StyledPage>
+    </>
   );
 }
 

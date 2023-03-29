@@ -7,6 +7,8 @@ import Anxiety from "./pages/Anxiety";
 import Depression from "./pages/Depression";
 import Autism from "./pages/Autism";
 import Addiction from "./pages/Addiction";
+import Contact from "./components/Contact";
+import ArticlesSection from "./ArticlesSection";
 
 import "./App.css";
 
@@ -16,6 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="articles" element={<ArticlesSection />} />
+        <Route path="contact" element = {<Contact />} />
         <Route path="QuoteGenerator" element={<QuoteGenerator />} />
         <Route path="/anxiety" element={<Anxiety />} />
         <Route path="/depression" element={<Depression />} />
