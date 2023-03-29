@@ -1,23 +1,19 @@
-import { Typography, AppBar, Card, CardContent, CardMedia, Grid, Toolbar, Container } from '@mui/material';
+import { Typography, Card, CardContent, CardMedia, Grid, Container } from '@mui/material';
 import heroImage from '../images/hero.png';
 import mapImage from '../images/map.png';
 import { GitHub, LinkedIn } from '@mui/icons-material';
 import { CardActions, IconButton } from '@mui/material';
 import Iwona from '../images/iwona.jpeg';
 import Natalia from '../images/natalia.jpg';
+import Lentio from '../images/lentio.jpg';
+import Navbar from './NavBar';
 
 function About() {
-    return (
-      
-      <div>
+  return (
+    <div>
+      <Navbar />
         {<div>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" component="div">
-            Mental Map
-          </Typography>
-        </Toolbar>
-      </AppBar>
+
 
 <div
   style={{
@@ -71,11 +67,11 @@ function About() {
   <Grid container spacing={2}>
     <Grid item xs={12} sm={6} md={4}>
       <Card sx={{ maxWidth: 345, backgroundColor: '#f5f5f5', '&:hover': { backgroundColor: '#e0e0e0' } }}>
-        <CardMedia
-          sx={{ height: 140 }}
-          image="https://source.unsplash.com/random"
-          title="Card 1"
-        />
+      <CardMedia
+      sx={{ height: 220 }}
+      image={Lentio}
+      title="Lentio"
+    />
         <CardContent>
         <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
             Lentio Sechou
@@ -99,7 +95,7 @@ function About() {
     <CardMedia
       sx={{ height: 220 }}
       image={Iwona}
-      title="Card 1"
+      title="Iwona"
     />
     <CardContent>
       <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
@@ -125,7 +121,7 @@ function About() {
       <CardMedia
       sx={{ height: 220 }}
       image={Natalia}
-      title="Card 1"
+      title="Natalia"
     />
         <CardContent>
         <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
@@ -178,7 +174,18 @@ function About() {
         Get to know us!
       </Typography>
       <Typography variant="body2" color="textSecondary" component="p">
-        The team at Mental Map is a group of highly skilled professionals dedicated to delivering cutting-edge solutions in the field of mental health. The team comprises of experts in various fields including psychiatry, psychology, counseling, and software development. They work collaboratively to create innovative digital tools that aim to help people manage their mental health effectively. Each team member brings a unique set of skills and experiences to the table, and they all share a common passion for improving the lives of those struggling with mental health issues. With their expertise and dedication, the team at Mental Map is committed to making a positive impact in the mental health industry.
+        The team at Mental Map is a group of highly skilled professionals dedicated to delivering cutting-edge solutions in the field of mental health. The team comprises of experts in various fields including psychiatry, psychology, counseling, and software development. They work collaboratively to create innovative digital tools that aim to help people manage their mental health effectively.  
+      </Typography>
+    </CardContent>
+  </Card>
+</Grid>
+<Grid item xs={12} sm={6} md={4}>
+  <Card sx={{ maxWidth: 900, backgroundColor: '#f5f5f5', '&:hover': { backgroundColor: '#e0e0e0' } }}>
+    <CardContent>
+     
+      <Typography variant="body2" color="textSecondary" component="p">
+      
+    <p>Each team member brings a unique set of skills and experiences to the table, and they all share a common passion for improving the lives of those struggling with mental health issues.</p> <p>With their expertise and dedication, the team at Mental Map is committed to making a positive impact in the mental health industry.</p>
       </Typography>
     </CardContent>
   </Card>
