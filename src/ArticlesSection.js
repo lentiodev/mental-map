@@ -1,90 +1,101 @@
-// src/ArticlesSection.js
-
-import React, { useState } from "react";
-import {
-  Box,
-  Grid,
-  Typography,
-  TextField,
-  Card,
-  CardContent,
-  CardMedia,
-  Button,
-} from "@mui/material";
-
-import Pagination from "@mui/material/Pagination";
-import articlesData from "./articlesData";
+import React, { useState } from 'react';
+import { Box, Typography, TextField, Card, CardContent, CardMedia, Button, Modal, IconButton } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
+import { Pagination } from '@mui/material';
+import  articlesData  from './articlesData';
 
 const ArticlesSection = () => {
-  const [search, setSearch] = useState("");
-  const [page, setPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [articlesPerPage] = useState(8);
+  const [selectedArticle, setSelectedArticle] = useState(null);
+  const [search, setSearch] = useState('');
+
   const filteredArticles = articlesData.filter((article) =>
     article.title.toLowerCase().includes(search.toLowerCase())
   );
 
-  const handleChange = (event, value) => {
-    setPage(value);
+  const indexOfLastArticle = currentPage * articlesPerPage;
+  const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
+  const currentArticles = filteredArticles.slice(indexOfFirstArticle, indexOfLastArticle);
+
+  const handleChangePage = (event, newPage) => {
+    setCurrentPage(newPage);
+  };
+
+  const handleOpenModal = (article) => {
+    setSelectedArticle(article);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedArticle(null);
   };
 
   return (
-    <Box
-      sx={{
-        width: "100%",
-        minHeight: "100%",
-        backgroundColor: "#eefcfb",
-        pt: 4,
-        px: { xs: 2, sm: 4, md: 8 },
-        pb: { xs: 4, sm: 6 },
-      }}
-    >
-      <Typography variant="h4" align="center" mb={3}>
+    <Box sx={{ minHeight: '100%', backgroundColor: '#eefcfb', py: 4 }}>
+      <Typography variant="h4" mb={4} textAlign="center">
         Mental Health Articles
       </Typography>
-      <Box mb={3} display="flex" justifyContent="center">
+      <Box sx={{ display: 'flex', justifyContent: 'center', mb: 4 }}>
         <TextField
           label="Search articles"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           variant="outlined"
-          sx={{ width: { xs: "100%", sm: "50%", md: "40%" } }}
         />
       </Box>
-      <Grid container spacing={4}>
-        {filteredArticles
-          .slice((page - 1) * 8, page * 8)
-          .map((article, index) => (
-            <Grid item key={index} xs={12} sm={6} md={3}>
-              <Card>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image={article.image}
-                  alt={article.title}
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h6" component="div">
-                    {article.title}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {article.description}
-                  </Typography>
-                </CardContent>
-                <Box p={2} display="flex" justifyContent="center">
-                  <Button variant="contained" color="primary">
-                    Read More
-                  </Button>
-                </Box>
-              </Card>
-            </Grid>
-          ))}
-      </Grid>
-      <Box display="flex" justifyContent="center" mt={4}>
-        <Pagination
-          count={Math.ceil(filteredArticles.length / 8)}
-          page={page}
-          onChange={handleChange}
-        />
+      <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: '1fr 1fr', md: '1fr 1fr 1fr 1fr' }, gap: 2, justifyContent: 'center', alignItems: 'center', mx: 'auto', width: '90%', mb: 4 }}>
+        {currentArticles.map((article) => (
+          <Card key={article.id} sx={{ maxWidth: 345, minHeight: 300 }}>
+            <CardMedia component="img" height="140" image={article.image} alt={article.title} />
+            <CardContent>
+              <Typography gutterBottom variant="h6" component="div">
+                {article.title}
+              </Typography>
+            </CardContent>
+            <Box sx={{ display: 'flex', justifyContent: 'center', mb: 2 }}>
+              <Button variant="contained" sx={{ backgroundColor: '#5ce0d8', color: '#fff' }} onClick={() => handleOpenModal(article)}>
+                Read More
+              </Button>
+            </Box>
+          </Card>
+        ))}
       </Box>
+      <Pagination count={Math.ceil(filteredArticles.length / articlesPerPage)} page={currentPage} onChange={handleChangePage} sx={{ justifyContent: 'center', display: 'flex', mb: 4 }} />
+      
+      <Modal open={!!selectedArticle} onClose={handleCloseModal}>
+        <Box sx={{
+          backgroundColor: 'background.paper',
+          width: { xs: '90%', md: '60%' },
+          mx: 'auto',
+          my: '5%',
+          p: 4,
+          borderRadius: 2,
+          boxShadow: 24,
+          position: 'relative',
+          overflowY: 'scroll',
+          maxHeight: '80%',
+        }}>
+          <IconButton
+            sx={{ position: 'absolute', top: 0, right: 0 }}
+            onClick={handleCloseModal}
+          >
+            <CloseIcon />
+          </IconButton>
+          <Typography variant="h5" component="h2" mb={2}>
+            {selectedArticle && selectedArticle.title}
+          </Typography>
+          <CardMedia
+            component="img"
+            height="200"
+            image={selectedArticle && selectedArticle.image}
+            alt={selectedArticle && selectedArticle.title}
+            sx={{ mb: 2 }}
+          />
+          <Typography variant="body1" mb={2}>
+            {selectedArticle && selectedArticle.content}
+          </Typography>
+        </Box>
+      </Modal>
     </Box>
   );
 };

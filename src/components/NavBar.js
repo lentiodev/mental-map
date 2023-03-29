@@ -42,6 +42,9 @@ const Navbar = () => {
           />
           Mental Map
         </StyledLogo>
+        <StyledNavLink to="/" activeClassName="active">
+          <Button color="inherit">Home</Button>
+        </StyledNavLink>
         <StyledNavLink to="/articles" activeClassName="active">
           <Button color="inherit">Articles</Button>
         </StyledNavLink>
