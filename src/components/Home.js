@@ -20,7 +20,7 @@ const StyledButton = styled(Link)`
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 61%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-decoration: none;
