@@ -4,9 +4,12 @@ import mapImage from '../images/map.png';
 import { GitHub, LinkedIn } from '@mui/icons-material';
 import { CardActions, IconButton } from '@mui/material';
 import Navbar from './NavBar';
+import Iwona from '../images/iwona.jpeg';
+import Natalia from '../images/natalia.jpg';
 
 function About() {
     return (
+      
       <div>
         <Navbar />
         {<div>
@@ -44,7 +47,7 @@ function About() {
 <Container maxWidth="md" sx={{ marginTop: '4rem' }}>
 <div style={{ textAlign: 'center' }}>
   <Typography variant="h1" sx={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '2rem' }}>
-    About Mental Map
+    Our Mission
   </Typography>
 </div>
   <Typography variant="body1" gutterBottom>
@@ -76,7 +79,7 @@ function About() {
           title="Card 1"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
             Lentio Sechou
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
@@ -84,7 +87,7 @@ function About() {
           </Typography>
         </CardContent>
         <CardActions sx={{ justifyContent: 'center' }}>
-          <IconButton aria-label="GitHub" href="https://github.com">
+          <IconButton aria-label="GitHub" href="https://github.com/lentiodev">
             <GitHub />
           </IconButton>
           <IconButton aria-label="LinkedIn" href="https://linkedin.com">
@@ -94,50 +97,52 @@ function About() {
       </Card>
     </Grid>
     <Grid item xs={12} sm={6} md={4}>
-      <Card sx={{ maxWidth: 345, backgroundColor: '#f5f5f5', '&:hover': { backgroundColor: '#e0e0e0' } }}>
-        <CardMedia
-          sx={{ height: 140 }}
-          image="https://source.unsplash.com/random"
-          title="Card 1"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Natalia Sergovantseva
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </Typography>
-        </CardContent>
-        <CardActions sx={{ justifyContent: 'center' }}>
-          <IconButton aria-label="GitHub" href="https://github.com">
-            <GitHub />
-          </IconButton>
-          <IconButton aria-label="LinkedIn" href="https://linkedin.com">
-            <LinkedIn />
-          </IconButton>
-        </CardActions>
-      </Card>
-    </Grid>
+  <Card sx={{ maxWidth: 345, backgroundColor: '#f5f5f5', '&:hover': { backgroundColor: '#e0e0e0' } }}>
+    <CardMedia
+      sx={{ height: 220 }}
+      image={Iwona}
+      title="Card 1"
+    />
+    <CardContent>
+      <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
+        Iwona Malkinska
+      </Typography>
+      <Typography variant="body2" color="textSecondary" component="p">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </Typography>
+    </CardContent>
+    <CardActions sx={{ justifyContent: 'center' }}>
+      <IconButton aria-label="GitHub" href="https://github.com/ivonamaria">
+        <GitHub />
+      </IconButton>
+      <IconButton aria-label="LinkedIn" href="https://www.linkedin.com/in/iwona-malkinska-90a941215/">
+        <LinkedIn />
+      </IconButton>
+    </CardActions>
+  </Card>
+</Grid>
+
     <Grid item xs={12} sm={6} md={4}>
       <Card sx={{ maxWidth: 345, backgroundColor: '#f5f5f5', '&:hover': { backgroundColor: '#e0e0e0' } }}>
-        <CardMedia
-          sx={{ height: 140 }}
-          image="https://source.unsplash.com/random"
-          title="Card 1"
-        />
+      <CardMedia
+      sx={{ height: 220 }}
+      image={Natalia}
+      title="Card 1"
+    />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Iwona Malkinska
-          </Typography>
+        <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
+  Natalia Sergovantseva
+</Typography>
+
           <Typography variant="body2" color="textSecondary" component="p">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 </Typography>
 </CardContent>
     <CardActions sx={{ justifyContent: 'center' }}>
-      <IconButton aria-label="GitHub" href="https://github.com">
+      <IconButton aria-label="GitHub" href="https://github.com/web3cryptoidea">
         <GitHub />
       </IconButton>
-      <IconButton aria-label="LinkedIn" href="https://linkedin.com">
+      <IconButton aria-label="LinkedIn" href="https://www.linkedin.com/in/natalia-sergovantseva/">
         <LinkedIn />
       </IconButton>
     </CardActions>
@@ -151,7 +156,7 @@ function About() {
           title="Card 1"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
           Vitaliy Zharkovskiy
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
@@ -159,7 +164,7 @@ function About() {
 </Typography>
 </CardContent>
     <CardActions sx={{ justifyContent: 'center' }}>
-      <IconButton aria-label="GitHub" href="https://github.com">
+      <IconButton aria-label="GitHub" href="https://github.com/VitaliyZhark">
         <GitHub />
       </IconButton>
       <IconButton aria-label="LinkedIn" href="https://linkedin.com">
@@ -168,10 +173,18 @@ function About() {
     </CardActions>
   </Card>
 </Grid>
-        
-{/* <Grid item xs={12} sm={6} md={3}>
-      <img src="https://cdn.pixabay.com/photo/2020/06/23/00/53/river-5330961_960_720.jpg" alt="additional photo" />
-    </Grid> */}
+<Grid item xs={12} sm={6} md={4}>
+  <Card sx={{ maxWidth: 900, backgroundColor: '#f5f5f5', '&:hover': { backgroundColor: '#e0e0e0' } }}>
+    <CardContent>
+      <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 'bold' }} uppercase>
+        Get to know us!
+      </Typography>
+      <Typography variant="body2" color="textSecondary" component="p">
+        The team at Mental Map is a group of highly skilled professionals dedicated to delivering cutting-edge solutions in the field of mental health. The team comprises of experts in various fields including psychiatry, psychology, counseling, and software development. They work collaboratively to create innovative digital tools that aim to help people manage their mental health effectively. Each team member brings a unique set of skills and experiences to the table, and they all share a common passion for improving the lives of those struggling with mental health issues. With their expertise and dedication, the team at Mental Map is committed to making a positive impact in the mental health industry.
+      </Typography>
+    </CardContent>
+  </Card>
+</Grid>
 </Grid>
       </Container>
     </div>
