@@ -1,7 +1,7 @@
 const articlesData = [
   {
     id: 1,
-    title: "How to support someone with a mental health problem",
+    title: "How to support someone with a mental health problem, here are some advice",
     image: "https://www.mentalhealth.org.uk/sites/default/files/styles/696w/public/2022-04/Two-Women-Talking.webp?itok=6wdhlrsz",
     content: `How do I know if someone has a mental health problem?
     Sometimes it will seem obvious when someone is going through a hard time, but there is no simple way of knowing if they have a mental health problem. Sometimes you don’t need to know. It’s more important to respond sensitively to someone who seems troubled than to find out whether or not they have a diagnosis.
@@ -38,13 +38,13 @@ const articlesData = [
   },
   {
     id: 4,
-    title: "How to have a healthy brain",
+    title: "How to have a healthy brain, data from early life experts revealed",
     image: "https://i.guim.co.uk/img/media/f2549fdc46acd7b13a175558d4cffbedf18d337b/0_0_5000_3000/master/5000.jpg?width=965&quality=45&dpr=2&s=none",
     content: "While the foundations of brain structure and function are laid during pregnancy and early life, the brain is constantly being fuelled and shaped by the food and drink we consume daily. We should be thinking of brain health like a pension plan; it is best to start as early as possible so that you have more to draw from when you need it. That said, it is never too late to invest in your brain health. Here is how to use nutrition to aid the brain at each stage of life.",
   },
   {
     id: 5,
-    title: "Mental health of young adults severely impacted by pandemic – study",
+    title: "Mental health of young adults severely impacted by pandemic – study shows",
     image: "https://i.guim.co.uk/img/media/f90e8bfd04db62192cc3b2ac4342fd95c7bc97ba/0_1561_3396_2038/master/3396.jpg?width=620&quality=45&dpr=2&s=none",
     content: `A new study has found that the pandemic has severely affected people’s mental health and relationships all over the world, particularly for young adults.
 
@@ -70,7 +70,7 @@ const articlesData = [
   },
   {
     id: 8,
-    title: "Psychosis: Will catching early warning signs help?",
+    title: "Psychosis: Will catching early warning signs help you to avoid this problem",
     image: "https://domf5oio6qrcr.cloudfront.net/medialibrary/13202/e39009dc-0e75-4af7-bc25-9caba644b7cc.jpg",
     content: `One of the many forms mental illness may take is psychosis. People experiencing it may have hallucinations (hearing voices, seeing visions, or feeling sensations that are not real) or delusions (firmly fixed beliefs that are not based on reality). And often, a first experience of psychosis occurs in the teenage or young adult years.
 
