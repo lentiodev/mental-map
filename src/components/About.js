@@ -6,6 +6,7 @@ import { CardActions, IconButton } from '@mui/material';
 import Iwona from '../images/iwona.jpeg';
 import Natalia from '../images/natalia.jpg';
 import Lentio from '../images/lentio.jpg';
+import Vitaly from '../images/vitaly.jpg';
 import Navbar from './NavBar';
 
 function About() {
@@ -144,11 +145,11 @@ function About() {
 </Grid>
     <Grid item xs={12} sm={6} md={4}>
       <Card sx={{ maxWidth: 345, backgroundColor: '#f5f5f5', '&:hover': { backgroundColor: '#e0e0e0' } }}>
-        <CardMedia
-          sx={{ height: 140 }}
-          image="https://source.unsplash.com/random"
-          title="Card 1"
-        />
+      <CardMedia
+      sx={{ height: 220 }}
+      image={Vitaly}
+      title="Vitaly"
+    />
         <CardContent>
           <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
           Vitaliy Zharkovskiy
