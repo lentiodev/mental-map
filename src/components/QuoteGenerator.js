@@ -6,6 +6,10 @@ import { styled } from '@mui/material';
 const StyledPage = styled('div')`
   background-color: #${({ backgroundColor }) => backgroundColor || 'fff'};
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const StyledQuoteCard = styled('div')`
@@ -16,12 +20,9 @@ const StyledQuoteCard = styled('div')`
   margin: 0 auto;
   padding: 32px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 61%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
 `;
 
@@ -33,26 +34,34 @@ const StyledButton = styled('button')`
   font-size: 20px;
   padding: 8px 16px;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 61%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  margin-top: 32px;
+
+  &:hover {
+    background-color: #52c2b9;
+  }
+`;
+
+const StyledQuote = styled('span')`
+  font-size: 24px;
+  margin-top: 16px;
+`;
+
+const StyledAuthor = styled('span')`
+  font-size: 20px;
+  margin-top: 8px;
 `;
 
 function QuoteGenerator() {
   const [quote, setQuote] = useState('');
+  const [author, setAuthor] = useState('');
   const [backgroundColor, setBackgroundColor] = useState('fff');
 
   const getQuote = () => {
-    fetch('https://type.fit/api/quotes')
+    fetch('https://api.quotable.io/random')
       .then((response) => response.json())
       .then((data) => {
-        const randomIndex = Math.floor(Math.random() * data.length);
-        setQuote(data[randomIndex].text);
+        setQuote(`"${data.content}"`);
+        setAuthor(`- ${data.author}`);
         setBackgroundColor(
           Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')
         );
@@ -62,17 +71,17 @@ function QuoteGenerator() {
 
   return (
     <>
-    <Navbar />
-    <StyledPage backgroundColor={backgroundColor}>
-      <StyledQuoteCard>
-        <h1>Get Your Quote of the Day!</h1>
-        <p>{quote}</p>
+      <Navbar />
+      <StyledPage backgroundColor={backgroundColor}>
+        <StyledQuoteCard>
+          <h1>Inspirational Saying of the Day</h1>
+          <StyledQuote>{quote}</StyledQuote>
+          <StyledAuthor>{author}</StyledAuthor>
+        </StyledQuoteCard>
         <StyledButton onClick={getQuote}>Generate Quote</StyledButton>
-      </StyledQuoteCard>
-    </StyledPage>
+      </StyledPage>
     </>
   );
 }
 
 export default QuoteGenerator;
-

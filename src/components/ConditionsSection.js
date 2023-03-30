@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 import { styled } from "@mui/material";
 import {
   AnxietyIcon,
@@ -55,7 +56,8 @@ const ConditionsSection = () => {
             </IconWrapper>
           }
           variant="contained"
-          onClick={() => (window.location.href = "/anxiety")}
+          component={Link}
+          to="/anxiety"
         >
           Anxiety
         </StyledButton>
@@ -66,7 +68,8 @@ const ConditionsSection = () => {
             </IconWrapper>
           }
           variant="contained"
-          onClick={() => (window.location.href = "/depression")}
+          component={Link}
+          to="/depression"
         >
           Depression
         </StyledButton>
@@ -77,7 +80,8 @@ const ConditionsSection = () => {
             </IconWrapper>
           }
           variant="contained"
-          onClick={() => (window.location.href = "/autism")}
+          component={Link}
+          to="/autism"
         >
           Autism
         </StyledButton>
@@ -88,7 +92,8 @@ const ConditionsSection = () => {
             </IconWrapper>
           }
           variant="contained"
-          onClick={() => (window.location.href = "/addiction")}
+          component={Link}
+          to="/addiction"
         >
           Addiction
         </StyledButton>
