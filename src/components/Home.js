@@ -6,6 +6,7 @@ import ArticlesSection from "../ArticlesSection";
 import MentalQuestions from "../MentalQuestions";
 import Footer from "./Footer";
 
+
 import { styled } from "@mui/material";
 import { Link } from "react-router-dom";
 
@@ -39,6 +40,7 @@ const Home = () => {
       </StyledButton>
       <Footer />
     </>
+   
   );
 };
 
