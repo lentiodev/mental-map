@@ -10,6 +10,7 @@ import Addiction from "./pages/Addiction";
 import Contact from "./components/Contact";
 import ArticlesSection from "./ArticlesSection";
 
+
 import "./App.css";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/depression" element={<Depression />} />
         <Route path="/autism" element={<Autism />} />
         <Route path="/addiction" element={<Addiction />} />
+    
       </Routes>
     </Router>
   );
