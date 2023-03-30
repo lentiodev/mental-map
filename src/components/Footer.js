@@ -21,14 +21,14 @@ return (
 		<Row>
 		<Column>
 			<Heading>About Us</Heading>
-			<FooterLink href="/about">About Us</FooterLink>
-			<FooterLink href="/contact">Contact</FooterLink>
+			<FooterLink href="https://deploy-preview-22--delicate-clafoutis-8421e7.netlify.app/about">About Us</FooterLink>
+			<FooterLink href="https://deploy-preview-22--delicate-clafoutis-8421e7.netlify.app/contact">Contact</FooterLink>
 			<FooterLink href="https://deploy-preview-19--delicate-clafoutis-8421e7.netlify.app/">Main</FooterLink>
 		</Column>
 		<Column>
 			<Heading>Features</Heading>
-			<FooterLink href="/QuoteGenerator">Get Quote</FooterLink>
-			<FooterLink href="/articles">Articles</FooterLink>
+			<FooterLink href="https://deploy-preview-22--delicate-clafoutis-8421e7.netlify.app/QuoteGenerator">Get Quote</FooterLink>
+			<FooterLink href="https://deploy-preview-22--delicate-clafoutis-8421e7.netlify.app/articles">Articles</FooterLink>
 			<FooterLink href="#">Testings</FooterLink>
 			<FooterLink href="#">Video</FooterLink>
 		</Column>
