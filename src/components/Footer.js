@@ -29,7 +29,7 @@ return (
 			<Heading>Features</Heading>
 			<FooterLink href="https://deploy-preview-22--delicate-clafoutis-8421e7.netlify.app/QuoteGenerator">Get Quote</FooterLink>
 			<FooterLink href="https://deploy-preview-22--delicate-clafoutis-8421e7.netlify.app/articles">Articles</FooterLink>
-			<FooterLink href="#">Testings</FooterLink>
+			<FooterLink href="#">Audio</FooterLink>
 			<FooterLink href="#">Video</FooterLink>
 		</Column>
 		<Column>
