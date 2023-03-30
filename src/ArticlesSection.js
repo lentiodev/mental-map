@@ -3,6 +3,8 @@ import { Box, Typography, TextField, Card, CardContent, CardMedia, Button, Modal
 import CloseIcon from '@mui/icons-material/Close';
 import { Pagination } from '@mui/material';
 import  articlesData  from './articlesData';
+import Navbar from './components/NavBar';
+import Footer from './components/Footer'
 
 const ArticlesSection = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -30,7 +32,8 @@ const ArticlesSection = () => {
     setSelectedArticle(null);
   };
 
-  return (
+  return (<>
+  <Navbar />
     <Box sx={{ minHeight: '100%', backgroundColor: '#eefcfb', py: 4 }}>
       <Typography variant="h4" mb={4} textAlign="center">
         Mental Health Articles
@@ -97,6 +100,8 @@ const ArticlesSection = () => {
         </Box>
       </Modal>
     </Box>
+    <Footer />
+    </>
   );
 };
 
