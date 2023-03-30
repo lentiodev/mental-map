@@ -1,85 +1,52 @@
-import React from "react"
-import {
-Box,
-Container,
-Row,
-Column,
-FooterLink,
-Heading,
-} from "./FooterStyles" 
+import React from 'react';
+import { Box, Typography, Button } from '@mui/material';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Footer = () => {
-return (
-	<Box>
-	<h1 style={{ color: "#5ce0d8",
-				textAlign: "center",
-				marginTop: "-50px",
-                 }}>
-		Mental Map: Feel good with best solutions
-	</h1>
-	<Container>
-		<Row>
-		<Column>
-			<Heading>About Us</Heading>
-			<FooterLink href="#">Mission</FooterLink>
-			<FooterLink href="#">Problem</FooterLink>
-			<FooterLink href="#">Solution</FooterLink>
-		</Column>
-		<Column>
-			<Heading>Features</Heading>
-			<FooterLink href="#">Get Quote</FooterLink>
-			<FooterLink href="#">Testings</FooterLink>
-			<FooterLink href="#">Audio</FooterLink>
-			<FooterLink href="#">Video</FooterLink>
-		</Column>
-		<Column>
-			<Heading>Contact Us</Heading>
-			<FooterLink href="#">Iwona</FooterLink>
-			<FooterLink href="#">Natalia</FooterLink>
-			<FooterLink href="#">Lentio</FooterLink>
-			<FooterLink href="#">Vitaliy</FooterLink>
-		</Column>
-		<Column>
-			<Heading>Social Media</Heading>
-			<FooterLink href="#">
-			<i className="fab fa-facebook-f">
-				<span style={{ marginLeft: "10px" }}>
-				Facebook
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-instagram">
-				<span style={{ marginLeft: "10px" }}>
-				Instagram
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-twitter">
-				<span style={{ marginLeft: "10px" }}>
-				Twitter
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-youtube">
-				<span style={{ marginLeft: "10px" }}>
-				Youtube
-				</span>
-			</i>
-			</FooterLink>
-		</Column>
-		</Row>
-	</Container>
-    <h5 style={{ color: "#5ce0d8",
-				textAlign: "center",
-				marginTop: "50px",
-                 }}>
-		© All rights reserved. 2023
-	</h5>
-	</Box>
-);
+  return (
+    <Box sx={{ backgroundColor: '#050720', minHeight: '200px', display: 'flex', justifyContent: 'space-around', alignItems: 'center', flexDirection: { xs: 'column', md: 'row' }, padding: 2 }}>
+      <Typography variant="h6" sx={{ color: '#FFCF43' }}>
+        Mental Map: Feel good with best solutions
+      </Typography>
+      <Box>
+        <Typography variant="h6" sx={{ color: 'white', mb: 1 }}>
+          About Us
+        </Typography>
+        <Box sx={{ flexDirection: 'column' }}>
+          <Button href="/about" target="_blank" rel="noopener" sx={{ color: 'white' }}>Mission</Button>
+          <Button href="/about" target="_blank" rel="noopener" sx={{ color: 'white' }}>Problem</Button>
+          <Button href="/about" target="_blank" rel="noopener" sx={{ color: 'white' }}>Solution</Button>
+        </Box>
+      </Box>
+      <Box>
+        <Typography variant="h6" sx={{ color: 'white', mb: 1 }}>
+          Contact Us
+        </Typography>
+        <Box sx={{ flexDirection: 'column', alignItems: 'center' }}>
+          <Button href="https://github.com/ivonamaria" target="_blank" rel="noopener" sx={{ color: 'white', mb: 1 }}>
+            <GitHubIcon fontSize="small" sx={{ marginRight: '5px' }} />
+            Iwona
+          </Button>
+          <Button href="https://github.com/web3cryptoidea" target="_blank" rel="noopener" sx={{ color: 'white', mb: 1 }}>
+            <GitHubIcon fontSize="small" sx={{ marginRight: '5px' }} />
+            Natalia
+          </Button>
+          <Button href="https://github.com/lentiodev" target="_blank" rel="noopener" sx={{ color: 'white', mb: 1 }}>
+            <GitHubIcon fontSize="small" sx={{ marginRight: '5px' }} />
+            Lentio
+          </Button>
+          <Button href="https://github.com/VitaliyZhark" target="_blank" rel="noopener" sx={{ color: 'white' }}>
+            <GitHubIcon fontSize="small" sx={{ marginRight: '5px' }} />
+            Vitaliy
+          </Button>
+        </Box>
+      </Box>
+      <Typography variant="body2" sx={{ color: '#5ce0d8', textAlign: 'center', marginTop: '50px' }}>
+        &copy; All rights reserved. 2023
+      </Typography>
+    </Box>
+  );
 };
 
 export default Footer;
+

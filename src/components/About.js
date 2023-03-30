@@ -8,6 +8,7 @@ import Natalia from '../images/natalia.jpg';
 import Lentio from '../images/lentio.jpg';
 import Vitaly from '../images/vitaly.jpg';
 import Navbar from './NavBar';
+import Footer from './Footer';
 
 function About() {
   return (
@@ -195,6 +196,7 @@ function About() {
       </Container>
     </div>
 }
+<Footer />
       </div>
     );
   }
