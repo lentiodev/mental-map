@@ -25,7 +25,7 @@ Clone the repository:
 git clone https://github.com/lentiodev/mental-map.git
 
 ## Usage
-Link to deployed application (https://deploy-preview-19--delicate-clafoutis-8421e7.netlify.app/)
+Link to deployed application (https://delicate-clafoutis-8421e7.netlify.app/)
 
 Link to github repository (https://github.com/lentiodev/mental-map) 
 
