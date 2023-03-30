@@ -21,48 +21,48 @@ return (
 		<Row>
 		<Column>
 			<Heading>About Us</Heading>
-			<FooterLink href="#">Mission</FooterLink>
-			<FooterLink href="#">Problem</FooterLink>
-			<FooterLink href="#">Solution</FooterLink>
+			<FooterLink href="https://deploy-preview-22--delicate-clafoutis-8421e7.netlify.app/about">About Us</FooterLink>
+			<FooterLink href="https://deploy-preview-22--delicate-clafoutis-8421e7.netlify.app/contact">Contact</FooterLink>
+			<FooterLink href="https://deploy-preview-19--delicate-clafoutis-8421e7.netlify.app/">Main</FooterLink>
 		</Column>
 		<Column>
 			<Heading>Features</Heading>
-			<FooterLink href="#">Get Quote</FooterLink>
+			<FooterLink href="https://deploy-preview-22--delicate-clafoutis-8421e7.netlify.app/QuoteGenerator">Get Quote</FooterLink>
+			<FooterLink href="https://deploy-preview-22--delicate-clafoutis-8421e7.netlify.app/articles">Articles</FooterLink>
 			<FooterLink href="#">Testings</FooterLink>
-			<FooterLink href="#">Audio</FooterLink>
 			<FooterLink href="#">Video</FooterLink>
 		</Column>
 		<Column>
 			<Heading>Contact Us</Heading>
-			<FooterLink href="#">Iwona</FooterLink>
-			<FooterLink href="#">Natalia</FooterLink>
-			<FooterLink href="#">Lentio</FooterLink>
-			<FooterLink href="#">Vitaliy</FooterLink>
+			<FooterLink href="https://github.com/ivonamaria">Iwona</FooterLink>
+			<FooterLink href="https://github.com/web3cryptoidea">Natalia</FooterLink>
+			<FooterLink href="https://github.com/lentiodev">Lentio</FooterLink>
+			<FooterLink href="https://github.com/VitaliyZhark">Vitaliy</FooterLink>
 		</Column>
 		<Column>
 			<Heading>Social Media</Heading>
-			<FooterLink href="#">
+			<FooterLink href="https://www.facebook.com/">
 			<i className="fab fa-facebook-f">
 				<span style={{ marginLeft: "10px" }}>
 				Facebook
 				</span>
 			</i>
 			</FooterLink>
-			<FooterLink href="#">
+			<FooterLink href="https://www.instagram.com/">
 			<i className="fab fa-instagram">
 				<span style={{ marginLeft: "10px" }}>
 				Instagram
 				</span>
 			</i>
 			</FooterLink>
-			<FooterLink href="#">
+			<FooterLink href="https://twitter.com/">
 			<i className="fab fa-twitter">
 				<span style={{ marginLeft: "10px" }}>
 				Twitter
 				</span>
 			</i>
 			</FooterLink>
-			<FooterLink href="#">
+			<FooterLink href="https://youtube.com/">
 			<i className="fab fa-youtube">
 				<span style={{ marginLeft: "10px" }}>
 				Youtube
